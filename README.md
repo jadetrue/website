@@ -1,1 +1,11 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+# Website
+
+## 🧰 Built with
+
+-   NextJS
+-   Tailwind CSS
+-   Typescript
+
+## ✍🏻 Author
+
+-   GitHub - [@jadetruexo](https://github.com/jadetruexo/)
