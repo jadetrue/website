@@ -1,17 +1,9 @@
 import {GetStaticProps} from "next";
 import Head from "next/head";
 import Link from "next/link";
+import Card from "../components/Card";
 
 import {getSortedPostsData} from "../lib/posts";
-
-export const getStaticProps: GetStaticProps = async () => {
-    const allPostsData = getSortedPostsData();
-    return {
-        props: {
-            allPostsData,
-        },
-    };
-};
 
 export default function Home({
     allPostsData,
@@ -27,7 +19,21 @@ export default function Home({
             <Head>
                 <title>Jade's website</title>
             </Head>
-            <section className="bg-red-200">
+            <section>
+                <Card
+                    title="React & Typescript Beer App"
+                    tags={[
+                        "HTML",
+                        "CSS",
+                        "JavaScript",
+                        "TypeScript",
+                        "Python",
+                        "React",
+                        "NextJS",
+                    ]}
+                    body="Some random description for the project cards that show off my projects"
+                    link="www.google.com"
+                />
                 <p>
                     I am a passionate, self-taught Junior Front End Developer,
                     with a background in Project Management.
@@ -56,3 +62,12 @@ export default function Home({
         </>
     );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+    const allPostsData = getSortedPostsData();
+    return {
+        props: {
+            allPostsData,
+        },
+    };
+};

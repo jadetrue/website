@@ -1,4 +1,5 @@
 import * as NextImage from "next/image";
+import "../styles/global.css";
 
 export const parameters = {
     actions: {argTypesRegex: "^on[A-Z].*"},
