@@ -39,9 +39,7 @@ const Card: React.FC<Props> = ({
             </div>
             <div className="mt-6">{body}</div>
             <Link href={link}>
-                <a className="mt-6 flex justify-end hover:underline underline-offset-4 decoration-pink-200">
-                    View project
-                </a>
+                <a className="mt-6 flex justify-end">View project</a>
             </Link>
         </div>
     );

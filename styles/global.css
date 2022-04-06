@@ -31,3 +31,7 @@
 .boxShadow {
     box-shadow: var(--shadow-elevation-high);
 }
+
+.mediumBoxShadow {
+    box-shadow: var(--shadow-elevation-medium);
+}
