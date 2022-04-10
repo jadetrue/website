@@ -6,7 +6,7 @@ const Layout: React.FC = ({children}) => {
         <>
             <div className="min-h-screen md:min-h-full">
                 <Naivgation />
-                <main className="flex flex-col justify-center text-center m-auto max-w-6xl py-8">
+                <main className="m-auto flex max-w-6xl flex-col justify-center py-8 text-center">
                     {children}
                 </main>
             </div>
