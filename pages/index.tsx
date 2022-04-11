@@ -1,9 +1,10 @@
 import {GetStaticProps} from "next";
 import Head from "next/head";
-import Link from "next/link";
-import Card from "../components/Card";
-
 import {getSortedPostsData} from "../lib/posts";
+import Layout from "../components/Layout";
+import HomeSplash from "../components/HomeSplash";
+import About from "../components/About";
+import Blog from "../components/Blog";
 
 export default function Home({
     allPostsData,
@@ -12,54 +13,23 @@ export default function Home({
         date: string;
         title: string;
         id: string;
+        imageUrl: string;
     }[];
 }) {
     return (
-        <>
+        <Layout>
             <Head>
-                <title>Jade's website</title>
-            </Head>
-            <section>
-                <Card
-                    title="React & Typescript Beer App"
-                    tags={[
-                        "HTML",
-                        "CSS",
-                        "JavaScript",
-                        "TypeScript",
-                        "Python",
-                        "React",
-                        "NextJS",
-                    ]}
-                    body="Some random description for the project cards that show off my projects"
-                    link="www.google.com"
+                <title>Jade True | Front-end Developer</title>
+                <meta
+                    name="description"
+                    content="Hey, I'm Jade True. A Front-end Developer based in North Somerset. Find out more about me and the tech I use / am learning by visiting some of the projects I've been working on."
                 />
-                <p>
-                    I am a passionate, self-taught Junior Front End Developer,
-                    with a background in Project Management.
-                </p>
-                <br />
-                <p>
-                    My end goal is to make pretty websites that are pleasing to
-                    the eye, whilst giving the best possible experience to the
-                    user!
-                </p>
-            </section>
-            <section>
-                <h2>Blog</h2>
-                <ul>
-                    {allPostsData.map(({id, date, title}) => (
-                        <li key={id}>
-                            <Link href={`/posts/${id}`}>
-                                <a>{title}</a>
-                            </Link>
-                            <br />
-                            <small>{date}</small>
-                        </li>
-                    ))}
-                </ul>
-            </section>
-        </>
+            </Head>
+            <HomeSplash />
+            <About />
+            {/* <Projects /> */}
+            <Blog allPostsData={allPostsData} />
+        </Layout>
     );
 }
 
