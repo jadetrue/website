@@ -7,10 +7,10 @@ const HomeSplash = () => {
                 <h1 className="mb-4 text-5xl font-bold">Hey, I'm Jade 👋</h1>
                 <h2 className="text-4xl">
                     I’m a{" "}
-                    <span className="bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text font-normal text-transparent">
+                    <span className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text font-normal text-transparent">
                         passionate
                     </span>{" "}
-                    introvert who loves building things with React.
+                    introvert who loves creating things with code.
                 </h2>
             </div>
             <div className="mx-3 h-48 w-48 rounded-full bg-pink-500 bg-[url('/images/me.jpeg')] bg-cover bg-center" />
