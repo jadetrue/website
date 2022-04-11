@@ -8,6 +8,10 @@
         "build-storybook": "build-storybook -s public"
     },
     "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^6.1.1",
+        "@fortawesome/free-solid-svg-icons": "^6.1.1",
+        "@fortawesome/react-fontawesome": "^0.1.18",
+        "@tailwindcss/typography": "^0.5.2",
         "dayjs": "^1.11.0",
         "gray-matter": "^4.0.3",
         "next": "latest",
