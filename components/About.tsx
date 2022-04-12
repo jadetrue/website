@@ -2,7 +2,13 @@ import React from "react";
 
 const About = () => {
     return (
-        <div className="container my-24 h-full md:my-56">
+        <div
+            className="container my-24 flex h-full flex-col md:my-56 md:flex-row"
+            id="about"
+        >
+            <div className="flex flex-col items-center justify-center">
+                <img src="/images/about-image.png" alt="" />
+            </div>
             <div className="m-auto mt-8 max-w-3xl px-3 text-left md:mt-0">
                 <h1 className="mb-4 text-5xl font-bold">About me</h1>
                 <div className="text-2xl">

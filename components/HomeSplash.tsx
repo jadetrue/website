@@ -13,7 +13,7 @@ const HomeSplash = () => {
                     introvert who loves creating things with code.
                 </h2>
             </div>
-            <div className="mx-3 h-48 w-48 rounded-full bg-pink-500 bg-[url('/images/me.jpeg')] bg-cover bg-center" />
+            <div className="mx-3 h-48 w-48 rounded-full bg-[url('/images/me.jpeg')] bg-cover bg-center" />
         </div>
     );
 };
