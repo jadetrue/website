@@ -8,7 +8,7 @@ export interface Props {
 const Tag: React.FC<Props> = ({text, styles}) => {
     return (
         <div
-            className={`bg-pink-200 w-fit rounded hover:cursor-default text-sm font-light flex flex-row ${styles}`}
+            className={`flex w-fit flex-row rounded bg-cyan-500 text-sm font-light text-white hover:cursor-default ${styles}`}
         >
             {text}
         </div>

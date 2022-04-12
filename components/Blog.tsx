@@ -14,7 +14,7 @@ export interface Props {
 export const Blog: React.FC<Props> = ({allPostsData}) => {
     return (
         <div className="container my-24 w-full md:my-56">
-            <div className="m-auto mt-8 w-full max-w-3xl px-3 text-left md:mt-0 md:w-fit">
+            <div className="mt-8 w-full max-w-3xl px-3 text-left md:mt-0 md:w-fit">
                 <h1 className="mb-10 text-5xl font-bold">Blog</h1>
                 <ul>
                     {allPostsData.map(({id, date, title, imageUrl}) => {
@@ -23,7 +23,7 @@ export const Blog: React.FC<Props> = ({allPostsData}) => {
                             <Link href={`/posts/${id}`}>
                                 <li
                                     key={id}
-                                    className="hover:border-doubled rounded-lg border border-gray-200 p-5 hover:-translate-y-6  hover:scale-100 hover:cursor-pointer hover:bg-gradient-to-bl hover:from-cyan-500/25 hover:to-blue-500/25"
+                                    className="mediumBoxShadow rounded-lg border border-gray-100 p-5 hover:-translate-y-6 hover:cursor-pointer hover:bg-gradient-to-bl hover:from-cyan-500/25 hover:to-blue-500/25"
                                 >
                                     <img
                                         src={imageUrl}
