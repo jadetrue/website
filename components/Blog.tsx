@@ -13,8 +13,8 @@ export interface Props {
 
 export const Blog: React.FC<Props> = ({allPostsData}) => {
     return (
-        <div className="container my-24 md:my-56">
-            <div className="m-auto mt-8 w-fit max-w-3xl px-3 text-left md:mt-0">
+        <div className="container my-24 w-full md:my-56">
+            <div className="m-auto mt-8 w-full max-w-3xl px-3 text-left md:mt-0 md:w-fit">
                 <h1 className="mb-10 text-5xl font-bold">Blog</h1>
                 <ul>
                     {allPostsData.map(({id, date, title, imageUrl}) => {
@@ -28,12 +28,11 @@ export const Blog: React.FC<Props> = ({allPostsData}) => {
                                     <img
                                         src={imageUrl}
                                         alt={title}
-                                        className="w-auto max-w-sm rounded-lg"
+                                        className="w-full max-w-sm rounded-lg"
                                     />
-                                    <h1 className="mt-4 text-xl">
-                                        <a>{title}</a>
+                                    <h1 className="mt-4 text-xl font-normal">
+                                        {title}
                                     </h1>
-
                                     <p className="mt-2">Posted {formatDate}</p>
                                 </li>
                             </Link>
