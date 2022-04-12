@@ -25,7 +25,7 @@ const Card: React.FC<Props> = ({
     link,
 }) => {
     return (
-        <div className="mediumBoxShadow my-10 h-full max-w-sm rounded-lg border border-gray-100 bg-white p-5 hover:-translate-y-6 hover:bg-gradient-to-bl hover:from-cyan-500/25 hover:to-blue-500/25">
+        <div className="mediumBoxShadow hover:a:underline my-10 h-full max-w-sm rounded-lg border border-gray-100 bg-white  p-5 hover:bg-gradient-to-bl hover:from-cyan-500/25 hover:to-blue-500/25">
             <header className="text-xl font-normal">{title}</header>
             <p className="mt-2 mb-6">{subtitle}</p>
             <Image

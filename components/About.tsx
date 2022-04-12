@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
     return (
         <div
-            className="container my-24 flex h-full flex-col md:my-56 md:flex-row"
+            className="container my-24 flex h-full flex-col md:my-40 md:flex-row"
             id="about"
         >
             <div className="flex flex-col items-center justify-center">
@@ -17,7 +17,7 @@ const About = () => {
                         North Somerset, with my fiance and little Daschshund,
                         Frankie. 🐕
                         <span className="italic">
-                            100% based of the Frankfurter Sausages
+                            100% named after Frankfurter Sausages
                         </span>
                         . I'm a bit obsessed with all dogs and cute animals.{" "}
                     </p>
@@ -28,9 +28,16 @@ const About = () => {
                     </p>
                     <br />
                     <p>
-                        Professionally, I am a Junior Frontend Developer at
-                        Loopin 🦉 with a background of 4+ years experience in
-                        Project Management.
+                        Professionally, I am a Junior Frontend Developer at{" "}
+                        <a
+                            href="https://www.letsloopin.com/"
+                            target="_blank"
+                            className="font-normal"
+                        >
+                            Loopin
+                        </a>{" "}
+                        🦉 with a background of 4+ years experience in Project
+                        Management.
                     </p>
                 </div>
             </div>

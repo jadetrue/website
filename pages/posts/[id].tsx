@@ -4,6 +4,8 @@ import {GetStaticProps, GetStaticPaths} from "next";
 import Layout from "../../components/Layout";
 import dayjs from "dayjs";
 import Link from "next/link";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faAnglesLeft} from "@fortawesome/free-solid-svg-icons";
 
 export default function Post({
     postData,
@@ -15,7 +17,10 @@ export default function Post({
         contentHtml: string;
     };
 }) {
-    const formatDate = dayjs(postData.date).format("D MMMM YYYY");
+    const advancedFormat = require("dayjs/plugin/advancedFormat");
+    dayjs.extend(advancedFormat);
+
+    const formatDate = dayjs(postData.date).format("Do MMMM YYYY");
 
     return (
         <Layout>
@@ -38,7 +43,14 @@ export default function Post({
                     dangerouslySetInnerHTML={{__html: postData.contentHtml}}
                 />
                 <Link href="/">
-                    <a className="mb-10">Back to home</a>
+                    <a className="flex flex-row no-underline">
+                        <div className="mr-2 align-middle">
+                            <FontAwesomeIcon icon={faAnglesLeft} />
+                        </div>
+                        <div className="from-cyan-500 to-blue-500 font-bold hover:bg-gradient-to-r hover:bg-clip-text hover:text-transparent">
+                            Back to home
+                        </div>
+                    </a>
                 </Link>
             </article>
         </Layout>

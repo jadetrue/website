@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 import HomeSplash from "../components/HomeSplash";
 import About from "../components/About";
 import Blog from "../components/Blog";
-import Projects from "../components/Projects";
+// import Projects from "../components/Projects";
 
 export default function Home({
     allPostsData,
@@ -28,7 +28,7 @@ export default function Home({
             </Head>
             <HomeSplash />
             <About />
-            <Projects />
+            {/* <Projects /> */}
             <Blog allPostsData={allPostsData} />
         </Layout>
     );

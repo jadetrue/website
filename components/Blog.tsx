@@ -13,12 +13,16 @@ export interface Props {
 
 export const Blog: React.FC<Props> = ({allPostsData}) => {
     return (
-        <div className="container my-24 w-full md:my-56">
-            <div className="mt-8 w-full max-w-3xl px-3 text-left md:mt-0 md:w-fit">
+        <div className="container my-24 w-full md:my-40">
+            <div className="mt-8 w-full px-3 text-left md:mt-0">
                 <h1 className="mb-10 text-5xl font-bold">Blog</h1>
-                <ul>
+
+                <ul className="flex w-full flex-row flex-wrap gap-8">
                     {allPostsData.map(({id, date, title, imageUrl}) => {
-                        const formatDate = dayjs(date).format("D MMMM YYYY");
+                        const advancedFormat = require("dayjs/plugin/advancedFormat");
+                        dayjs.extend(advancedFormat);
+
+                        const formatDate = dayjs(date).format("Do MMMM YYYY");
                         return (
                             <Link href={`/posts/${id}`}>
                                 <li

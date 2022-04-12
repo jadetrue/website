@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "./Button";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faAt, faCodeBranch} from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
     return (
@@ -12,31 +11,48 @@ const Footer = () => {
                         Say hi!
                     </h3>
                 </div>
-                <div className="flex w-full flex-col items-center justify-center gap-4 py-4 text-xl md:flex-row md:gap-8">
+                <div className="flex w-full flex-row items-center justify-center gap-4 py-4 text-xl md:gap-8">
                     <Button
                         type="link"
                         href="https://github.com/jadetruexo"
-                        styles="hover:-translate-y-2"
+                        styles="hover:animate-bounce"
                     >
-                        <FontAwesomeIcon icon={faCodeBranch} />
+                        <FontAwesomeIcon
+                            icon={{prefix: "fab", iconName: "github"}}
+                        />
                     </Button>
                     <Button
                         type="link"
-                        href="/"
-                        styles="hover:-translate-y-2"
-                    ></Button>
+                        href="https://www.linkedin.com/in/jadetrue/"
+                        styles="hover:animate-bounce"
+                    >
+                        <FontAwesomeIcon
+                            icon={{prefix: "fab", iconName: "linkedin"}}
+                        />
+                    </Button>
+                    <Button
+                        type="link"
+                        href="https://twitter.com/jadetruexo"
+                        styles="hover:animate-bounce"
+                    >
+                        <FontAwesomeIcon
+                            icon={{prefix: "fab", iconName: "twitter"}}
+                        />
+                    </Button>
                     <Button
                         type="link"
                         href="mailto:jadetruexo@gmail.com"
-                        styles="hover:-translate-y-2"
+                        styles=" hover:animate-bounce"
                     >
-                        <FontAwesomeIcon icon={faAt} />
+                        <FontAwesomeIcon
+                            icon={{prefix: "fas", iconName: "at"}}
+                        />
                     </Button>
                 </div>
             </div>
             <div className="flex justify-center pb-8">
                 <p className="text-md">
-                    Jade True © {new Date().getFullYear()}
+                    Jade True © {new Date().getUTCFullYear()}
                 </p>
             </div>
         </div>
