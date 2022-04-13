@@ -1,4 +1,5 @@
 import dayjs from "dayjs";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -26,13 +27,18 @@ export const Blog: React.FC<Props> = ({allPostsData}) => {
                             <Link href={`/posts/${id}`}>
                                 <li
                                     key={id}
-                                    className="mediumBoxShadow rounded-lg border border-gray-100 p-5 hover:-translate-y-6 hover:cursor-pointer hover:bg-gradient-to-bl hover:from-cyan-500/25 hover:to-blue-500/25"
+                                    className="mediumBoxShadow h-full w-1/3 rounded-lg border border-gray-100 p-5 hover:-translate-y-6 hover:cursor-pointer hover:bg-gradient-to-bl hover:from-cyan-500/25 hover:to-blue-500/25"
                                 >
-                                    <img
-                                        src={imageUrl}
-                                        alt={title}
-                                        className="w-full max-w-sm rounded-lg"
-                                    />
+                                    <div className="relative h-40 w-full">
+                                        <Image
+                                            objectFit="cover"
+                                            objectPosition="center"
+                                            layout="fill"
+                                            src={imageUrl}
+                                            alt={title}
+                                            className="w-full max-w-sm rounded-md"
+                                        />
+                                    </div>
                                     <h1 className="mt-4 text-xl font-normal">
                                         {title}
                                     </h1>

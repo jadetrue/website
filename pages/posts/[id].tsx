@@ -6,6 +6,7 @@ import dayjs from "dayjs";
 import Link from "next/link";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faAnglesLeft} from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 export default function Post({
     postData,
@@ -34,11 +35,16 @@ export default function Post({
                 <div className="text-md mb-8 text-center font-thin">
                     {formatDate}
                 </div>
-                <img
-                    src={postData.imageUrl}
-                    className="m-auto h-auto w-fit rounded-lg md:h-96"
-                    alt={postData.title}
-                />
+                <div className="relative h-48 w-full md:h-96">
+                    <Image
+                        objectFit="cover"
+                        objectPosition="center"
+                        layout="fill"
+                        src={postData.imageUrl}
+                        alt={postData.title}
+                        className="m-auto h-auto w-fit rounded-lg md:h-96"
+                    />
+                </div>
                 <div
                     className="mt-10"
                     dangerouslySetInnerHTML={{__html: postData.contentHtml}}
