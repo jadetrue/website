@@ -36,7 +36,8 @@ export default function Post({
                 </div>
                 <img
                     src={postData.imageUrl}
-                    className="m-auto h-96 w-fit rounded-lg"
+                    className="m-auto h-auto w-fit rounded-lg md:h-96"
+                    alt={postData.title}
                 />
                 <div
                     className="mt-10"

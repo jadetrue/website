@@ -46,7 +46,6 @@ const HomeSplash = () => {
                             className="text-5xl hover:animate-bounce"
                         />
                     </Button>
-
                     <Button
                         type="link"
                         href="mailto:jadetruexo@gmail.com"
