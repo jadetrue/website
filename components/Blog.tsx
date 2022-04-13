@@ -27,7 +27,7 @@ export const Blog: React.FC<Props> = ({allPostsData}) => {
                             <Link href={`/posts/${id}`}>
                                 <li
                                     key={id}
-                                    className="mediumBoxShadow h-full w-1/3 rounded-lg border border-gray-100 p-5 hover:-translate-y-6 hover:cursor-pointer hover:bg-gradient-to-bl hover:from-cyan-500/25 hover:to-blue-500/25"
+                                    className="mediumBoxShadow h-full rounded-lg border border-gray-100 p-5 hover:-translate-y-6 hover:cursor-pointer hover:bg-gradient-to-bl hover:from-cyan-500/25 hover:to-blue-500/25 lg:w-1/3"
                                 >
                                     <div className="relative h-40 w-full">
                                         <Image
