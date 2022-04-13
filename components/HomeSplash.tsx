@@ -7,7 +7,7 @@ const HomeSplash = () => {
         <div className="container my-24 flex h-full flex-col-reverse justify-between py-8 md:my-56 md:flex-row md:items-center">
             <div className="mt-8 max-w-3xl px-3 text-left md:mt-0">
                 <h1 className="mb-4 text-5xl font-bold">Hey, I'm Jade 👋</h1>
-                <h2 className="text-4xl">
+                <h2 className="text-4xl font-thin">
                     I’m a{" "}
                     <span className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text font-normal text-transparent">
                         passionate
@@ -15,7 +15,7 @@ const HomeSplash = () => {
                     introvert who loves creating things with code.
                 </h2>
                 <div className="mt-20 flex flex-row flex-wrap items-center gap-8">
-                    <div className="flex hidden h-1 w-40 items-center rounded-full bg-black align-middle md:block" />
+                    <div className="hidden h-1 w-40 items-center rounded-full bg-black align-middle md:flex" />
                     <Button
                         type="link"
                         href="https://github.com/jadetruexo"

@@ -12,7 +12,7 @@ const About = () => {
             <div className="m-auto mt-8 max-w-3xl px-3 text-left md:mt-0">
                 <h1 className="mb-4 text-5xl font-bold">About me</h1>
                 <div className="text-2xl">
-                    <p>
+                    <p className="font-thin">
                         I am born and bred in Bristol and currently live in
                         North Somerset, with my fiance and little Daschshund,
                         Frankie. 🐕
@@ -22,12 +22,12 @@ const About = () => {
                         . I'm a bit obsessed with all dogs and cute animals.{" "}
                     </p>
                     <br />
-                    <p>
+                    <p className="font-thin">
                         I'd describe myself as a curious, creative individual
                         that enjoy's a challenge.
                     </p>
                     <br />
-                    <p>
+                    <p className="font-thin">
                         Professionally, I am a Junior Frontend Developer at{" "}
                         <a
                             href="https://www.letsloopin.com/"

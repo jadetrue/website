@@ -16,7 +16,6 @@ export const Blog: React.FC<Props> = ({allPostsData}) => {
         <div className="container my-24 w-full md:my-40">
             <div className="mt-8 w-full px-3 text-left md:mt-0">
                 <h1 className="mb-10 text-5xl font-bold">Blog</h1>
-
                 <ul className="flex w-full flex-row flex-wrap gap-8">
                     {allPostsData.map(({id, date, title, imageUrl}) => {
                         const advancedFormat = require("dayjs/plugin/advancedFormat");
