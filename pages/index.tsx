@@ -25,6 +25,7 @@ export default function Home({
                     name="description"
                     content="Hey, I'm Jade True. A Front-end Developer based in North Somerset. Watch me grow here!"
                 />
+                <meta property="og:image" content="" />
             </Head>
             <HomeSplash />
             <About />
