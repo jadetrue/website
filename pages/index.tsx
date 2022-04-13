@@ -5,7 +5,6 @@ import Layout from "../components/Layout";
 import HomeSplash from "../components/HomeSplash";
 import About from "../components/About";
 import Blog from "../components/Blog";
-import Script from "next/script";
 // import Projects from "../components/Projects";
 
 export default function Home({
@@ -21,20 +20,6 @@ export default function Home({
     return (
         <Layout>
             <Head>
-                <Script
-                    strategy="lazyOnload"
-                    src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-                />
-                <Script strategy="lazyOnload">
-                    {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-            page_path: window.location.pathname,
-            });
-        `}
-                </Script>
                 <title>Jade True | Front-end Developer</title>
                 <meta
                     name="description"
