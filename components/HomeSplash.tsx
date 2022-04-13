@@ -1,5 +1,6 @@
 import React from "react";
 import SocialIcons from "./SocialIcons";
+import Image from "next/image";
 
 const HomeSplash = () => {
     return (
@@ -15,7 +16,18 @@ const HomeSplash = () => {
                 </h2>
                 <SocialIcons type="header" />
             </div>
-            <div className="mx-3 h-48 w-48 rounded-full bg-[url('/images/me.jpeg')] bg-cover bg-center" />
+            <div className="w-fit">
+                <div className="relative mx-3 h-48 w-48">
+                    <Image
+                        className="rounded-full"
+                        src={"/images/me.jpeg"}
+                        objectFit="cover"
+                        objectPosition="center"
+                        layout="fill"
+                        alt="Profile image of Jade"
+                    />
+                </div>
+            </div>
         </div>
     );
 };
