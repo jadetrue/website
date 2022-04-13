@@ -23,7 +23,7 @@ export default function Home({
                 <title>Jade True | Front-end Developer</title>
                 <meta
                     name="description"
-                    content="Hey, I'm Jade True. A Front-end Developer based in North Somerset. Find out more about me and the tech I use / am learning by visiting some of the projects I've been working on."
+                    content="Hey, I'm Jade True. A Front-end Developer based in North Somerset. Watch me grow here!"
                 />
             </Head>
             <HomeSplash />
