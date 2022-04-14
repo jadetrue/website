@@ -43,8 +43,6 @@ export default function Post({
                         src={postData.imageUrl}
                         alt={postData.title}
                         className="m-auto h-auto w-fit rounded-lg md:h-96"
-                        priority
-                        placeholder="blur"
                     />
                 </div>
                 <div
