@@ -25,6 +25,8 @@ const HomeSplash = () => {
                         objectPosition="center"
                         layout="fill"
                         alt="Profile image of Jade"
+                        priority
+                        placeholder="blur"
                     />
                 </div>
             </div>
