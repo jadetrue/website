@@ -37,8 +37,6 @@ export const Blog: React.FC<Props> = ({allPostsData}) => {
                                             src={imageUrl}
                                             alt={title}
                                             className="w-full max-w-sm rounded-md"
-                                            priority
-                                            placeholder="blur"
                                         />
                                     </div>
                                     <h1 className="mt-4 text-xl font-normal">
