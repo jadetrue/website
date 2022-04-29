@@ -13,7 +13,7 @@ const SocialIcons: React.FC<Props> = ({type}) => {
                 <div className="hidden h-1 w-40 items-center rounded-full bg-black align-middle md:flex" />
                 <Button
                     type="link"
-                    href="https://github.com/jadetruexo"
+                    href="https://github.com/jadetrue"
                     styles="hover:animate-bounce"
                 >
                     <FontAwesomeIcon
@@ -58,7 +58,7 @@ const SocialIcons: React.FC<Props> = ({type}) => {
         <div className="flex w-full flex-row items-center justify-center gap-4 py-4 text-xl md:gap-8">
             <Button
                 type="link"
-                href="https://github.com/jadetruexo"
+                href="https://github.com/jadetrue"
                 styles="hover:animate-bounce"
             >
                 <FontAwesomeIcon icon={{prefix: "fab", iconName: "github"}} />

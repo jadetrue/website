@@ -22,7 +22,7 @@ const Projects = () => {
                         "Tailwind CSS",
                     ]}
                     to="/project"
-                    link="https://github.com/jadetruexo/addict-beer-app"
+                    link="https://github.com/jadetrue/addict-beer-app"
                 />
             </div>
         </div>

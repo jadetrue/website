@@ -8,4 +8,4 @@
 
 ## ✍🏻 Author
 
--   GitHub - [@jadetruexo](https://github.com/jadetruexo/)
+-   GitHub - [@jadetrue](https://github.com/jadetrue/)
