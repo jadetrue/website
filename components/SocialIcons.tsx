@@ -33,7 +33,7 @@ const SocialIcons: React.FC<Props> = ({type}) => {
                 </Button>
                 <Button
                     type="link"
-                    href="https://twitter.com/jadetruexo"
+                    href="https://twitter.com/jadetrue_"
                     styles="hover:animate-bounce"
                 >
                     <FontAwesomeIcon
@@ -43,7 +43,7 @@ const SocialIcons: React.FC<Props> = ({type}) => {
                 </Button>
                 <Button
                     type="link"
-                    href="mailto:jadetruexo@gmail.com"
+                    href="mailto:info@jadetrue.co.uk"
                     styles=" hover:animate-bounce"
                 >
                     <FontAwesomeIcon
@@ -72,14 +72,14 @@ const SocialIcons: React.FC<Props> = ({type}) => {
             </Button>
             <Button
                 type="link"
-                href="https://twitter.com/jadetruexo"
+                href="https://twitter.com/jadetrue_"
                 styles="hover:animate-bounce"
             >
                 <FontAwesomeIcon icon={{prefix: "fab", iconName: "twitter"}} />
             </Button>
             <Button
                 type="link"
-                href="mailto:jadetruexo@gmail.com"
+                href="mailto:info@jadetrue.co.uk"
                 styles=" hover:animate-bounce"
             >
                 <FontAwesomeIcon icon={{prefix: "fas", iconName: "at"}} />
