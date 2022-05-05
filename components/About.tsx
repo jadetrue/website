@@ -31,11 +31,11 @@ const About = () => {
                     </p>
                     <br />
                     <p className="font-normal">
-                        Professionally, I am a Junior Frontend Developer at{" "}
+                        Professionally, I am a Junior Front-end Developer at{" "}
                         <a
                             href="https://www.letsloopin.com/"
                             target="_blank"
-                            className="font-normal"
+                            className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text font-normal text-transparent"
                         >
                             Loopin
                         </a>{" "}
