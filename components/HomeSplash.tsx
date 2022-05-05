@@ -19,6 +19,7 @@ const HomeSplash = () => {
             <div className="w-fit">
                 <div className="relative mx-3 h-48 w-48">
                     <Image
+                        loading="eager"
                         className="rounded-full"
                         src={"/images/me.jpeg"}
                         objectFit="cover"
