@@ -27,22 +27,27 @@ export const Blog: React.FC<Props> = ({allPostsData}) => {
                             <Link href={`/posts/${id}`}>
                                 <li
                                     key={id}
-                                    className="mediumBoxShadow h-full rounded-lg border border-gray-100 p-5 hover:-translate-y-6 hover:cursor-pointer hover:bg-gradient-to-bl hover:from-cyan-500/25 hover:to-blue-500/25 lg:w-1/3"
+                                    className="mediumBoxShadow h-full rounded-lg border border-gray-100 hover:-translate-y-6 hover:cursor-pointer hover:bg-gradient-to-bl hover:from-cyan-500/25 hover:to-blue-500/25 lg:w-1/3"
                                 >
                                     <div className="relative h-40 w-full">
                                         <Image
+                                            loading="eager"
                                             objectFit="cover"
                                             objectPosition="center"
                                             layout="fill"
                                             src={imageUrl}
                                             alt={title}
-                                            className="w-full max-w-sm rounded-md"
+                                            className="w-full max-w-sm rounded-t-md"
                                         />
                                     </div>
-                                    <h1 className="mt-4 text-xl font-normal">
-                                        {title}
-                                    </h1>
-                                    <p className="mt-2">Posted {formatDate}</p>
+                                    <div className="py-5 px-4">
+                                        <h1 className="text-xl font-normal">
+                                            {title}
+                                        </h1>
+                                        <p className="mt-2 italic">
+                                            {formatDate}
+                                        </p>
+                                    </div>
                                 </li>
                             </Link>
                         );
