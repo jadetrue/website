@@ -32,7 +32,7 @@ export default function Post({
                 <h1 className="mt-20 mb-2 text-center text-3xl font-normal">
                     {postData.title}
                 </h1>
-                <div className="text-md mb-8 text-center font-thin">
+                <div className="text-md mb-8 text-center font-light">
                     {formatDate}
                 </div>
                 <div className="relative h-48 w-full md:h-96">
@@ -54,7 +54,7 @@ export default function Post({
                         <div className="mr-2 align-middle">
                             <FontAwesomeIcon icon={faAnglesLeft} />
                         </div>
-                        <div className="from-cyan-500 to-blue-500 font-bold hover:bg-gradient-to-r hover:bg-clip-text hover:text-transparent">
+                        <div className="from-cyan-500 to-blue-500 font-normal hover:bg-gradient-to-r hover:bg-clip-text hover:text-transparent">
                             Back to home
                         </div>
                     </a>
