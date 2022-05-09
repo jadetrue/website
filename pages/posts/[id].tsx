@@ -7,11 +7,18 @@ import Link from "next/link";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faAnglesLeft} from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
+import {
+    TwitterShareButton,
+    TwitterIcon,
+    LinkedinShareButton,
+    LinkedinIcon,
+} from "next-share";
 
 export default function Post({
     postData,
 }: {
     postData: {
+        id: string;
         title: string;
         date: string;
         imageUrl: string;
@@ -50,7 +57,7 @@ export default function Post({
                     dangerouslySetInnerHTML={{__html: postData.contentHtml}}
                 />
                 <Link href="/">
-                    <a className="flex flex-row no-underline">
+                    <a className="flex w-fit flex-row no-underline">
                         <div className="mr-2 align-middle">
                             <FontAwesomeIcon icon={faAnglesLeft} />
                         </div>
@@ -59,6 +66,19 @@ export default function Post({
                         </div>
                     </a>
                 </Link>
+                <div className="mt-10 flex justify-center gap-4 md:mt-16">
+                    <LinkedinShareButton
+                        url={`https://www.jadetrue.co.uk/posts/${postData.id}`}
+                    >
+                        <LinkedinIcon size={32} round />
+                    </LinkedinShareButton>
+                    <TwitterShareButton
+                        url={`https://www.jadetrue.co.uk/posts/${postData.id}`}
+                        title={postData.title}
+                    >
+                        <TwitterIcon size={32} round />
+                    </TwitterShareButton>
+                </div>
             </article>
         </Layout>
     );
